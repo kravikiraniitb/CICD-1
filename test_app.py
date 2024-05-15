@@ -10,7 +10,7 @@ class BasicTests(unittest.TestCase):
     def test_home_page(self):
         response = self.app.get('/')
         self.assertEqual(response.status_code, 200)
-        self.assertEqual(response.data, b'Hello, World!')
+        self.assertEqual(response.data, b'Hello, CICD!')
 
 if __name__ == '__main__':
     unittest.main()
